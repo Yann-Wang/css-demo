@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.d2{
+			position:absolute;
+			left:0px;
+			top:0;
+			width:3000px;
+			background: red;
+			height:400px;
+			overflow: hidden;	
+			margin:0 auto;	
+
+		}
+		.d1{
+			width:600px;
+			height:400px;
+			margin:0 auto;
+			overflow:hidden;
+			position:relative;
+		}
+
+		.d2 img{
+			float:left;
+			width:600px;
+			height:400px;
+		}
+		.arrow{
+			width:50px;
+			height:50px;
+			position:absolute;
+			background:red;
+		}
+		.lt{
+			 left:25px;
+			 top:175px;
+		 }
+		.gt{
+			right:25px;
+			top:175px;
+		}
+		.d0{
+			position:relative;
+			width:800px;
+			margin:0 auto;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<div class="d0">
+		<div class="d1">
+			<div class="d2" id="cnt">
+				<img src="images/1.jpg" alt="">
+				<img src="images/2.jpg" alt="">
+				<img src="images/3.jpg" alt="">
+				<img src="images/4.jpg" alt="">
+				<img src="images/5.jpg" alt="">
+			</div>			
+		</div>
+		<div class="arrow lt" id="prev">&lt;</div>
+		<div class="arrow gt" id="next">&gt;</div>
+	</div>
+	<script>
+		
+			var prev = document.getElementById("prev");
+			var next = document.getElementById("next");
+			
+			function fn(){
+				var target = document.getElementById("cnt");
+				var num=0; 
+				return function(direction){
+					return function(){
+						if(direction == "next"){
+							num= (num+1)%5;	
+						}
+						else{
+							num = --num >=0 ? num : num+5;
+						}
+						
+						target.style.left = -num*600+'px';
+					}
+				}
+			}
+			var cb = fn();
+			prev.addEventListener("click",cb("prev"),false);
+			next.addEventListener("click",cb("next"),false);
+
+		
+	</script>
+	
+</body>
+</html>

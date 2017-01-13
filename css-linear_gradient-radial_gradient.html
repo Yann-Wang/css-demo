@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.toBottom{
+			width:300px;
+			height:300px;
+			background-image:-webkit-linear-gradient(to bottom right, red, green);
+			background-image:linear-gradient(to bottom right, red, green);
+		}
+		.rr{
+			width:300px;
+			height:300px;
+			background-image: -webkit-radial-gradient(circle,hsla(120,70%,60%,.9),hsla(360,60%,60%,.9));
+			background-image: radial-gradient(circle,hsla(120,70%,60%,.9),hsla(360,60%,60%,.9));
+		}
+		.rr2{
+			width:300px;
+			height:300px;
+			border-radius:50%;
+			background-image: radial-gradient(farthest-side circle at 50% 50%,red,blue);
+		}
+		.rr3{
+			width:300px;
+			height:300px;
+			border-radius:50%;
+			background-image: radial-gradient(red,green,blue);
+		}
+		.rlg{
+			width:300px;
+			height:300px;
+			
+			background-image: repeating-linear-gradient(red,green 40px,blue 80px);
+		}
+		.rrg{
+			width:300px;
+			height:300px;
+			border-radius:50%;
+			background-image: repeating-radial-gradient(red,green 40px,blue 80px);
+		}
+		body{
+			text-align:center;
+			line-height: 300px;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<div class="toBottom">线性渐变</div>
+	<div class="rr">径向渐变</div>
+	<div class="rr2">径向渐变</div>
+	<div class="rr3">径向渐变</div>
+	<div class="rlg">重复线性渐变</div>
+	<div class="rrg">重复径向渐变</div>
+	
+</body>
+</html>

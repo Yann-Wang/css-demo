@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.cnt :target{
+			background-color: red;
+		}
+		input[type="checkbox"]:checked + span{
+			background-color: red;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="cnt">
+		<div class="sec1">
+			<a href="#cite1">xxx</a>
+		</div>
+		<div class="sec2">
+			<a href="xxxx" id="cite1">sssss</a>
+		</div>
+		<form action="/example/html/form_action.asp" method="get">
+		  <p><input type="checkbox" name="vehicle" value="Bike" /><span> I have a bike</span></p>
+		  <p><input type="checkbox" name="vehicle" value="Car" checked="checked" /><span> I have a car</span></p>
+		  <input type="submit" value="Submit" />
+		</form>
+	</div>
+
+</body>
+</html>

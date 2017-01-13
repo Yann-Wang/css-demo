@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,p{
+			margin:0;
+			padding:0;
+		}
+		body{
+			height: 300px;
+		}
+		.wrapper{
+			border: 1px solid red;
+			-webkit-columns: 300px 4;
+			columns: 300px 4;
+			column-gap: 0;
+			column-rule: 3px dashed #ccc;
+		}
+		p{
+			text-align:center;
+		}
+		h1{
+			column-span:all;
+			text-align: center;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="wrapper">
+		<h1>金融时报：微软能否拯救windows 8 ?</h1>
+		<p>网易科技讯：以使用百分比显示，取决于对象的父级对象，Table在body之中，因此它的父级是body，而浏览器默认状态下，是没有给 body一个高度属性的，因此当我们直接设置#left为height:100%;时，不会产生任何效果，而当我们给body设置了100%之后，它的子 级对象 Table的height:100%;便发生作用了，这便是浏览器解析规则引发的高度自适应问题。而代码中除了给body应用之外，还 给 HTML对象也应用相同的样式设计，这样做的好处是使IE与firefox浏览器都能够实现高度自适应。另外，Firefox中的HTML标签不 是 100%高度，因此给两个标签都定义为height:100%;以保证两个浏</p>
+		<p>网易科技讯：xxxxx xxxx xxxxxx xxx xxx xxxxxxx xxxxxxx xxxxxxx xxxxx xxxxx x xxxxxxx xxxx xxxx xxxxx xx xxxxx xxx</p>
+		<p>网易科技讯：xxxxx xxxx xxxxxx xxx xxx xxxxxxx xxxxxxx xxxxxxx xxxxx xxxxx x xxxxxxx xxxx xxxx xxxxx xx xxxxx xxx</p>
+		<p>网易科技讯：xxxxx xxxx xxxxxx xxx xxx xxxxxxx xxxxxxx xxxxxxx xxxxx xxxxx x xxxxxxx xxxx xxxx xxxxx xx xxxxx xxx</p>
+	</div>
+	
+</body>
+</html>

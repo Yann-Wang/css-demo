@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		html{
+			height:100%;
+		}
+		body{
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: space-between;
+			height: 100%;
+			margin:0;
+			padding:0;
+		}
+		.hd{
+			flex:0 0 100px;
+			height: 100px;
+			background-color:red;
+		}
+		.sec{
+			flex:1 1 auto;
+			/*min-height: 100%; */
+			display:flex;
+			
+		}
+		.ft{
+			height: 100px;
+			flex:0 0 100px;
+			background-color:black;
+		}
+
+		.nav{
+			flex:0 0 200px;
+			background-color:green;
+		}
+		.art{
+			flex:1 1 auto;
+			background-color:maroon;
+		}
+		.aside{
+			flex:0 0 200px;
+			background-color:yellow;
+		}
+	</style>
+</head>
+<body>
+	<header class="hd">header</header>
+	<section class="sec">
+		<nav class="nav">nav</nav>
+		<article class="art">article</article>
+		<aside class="aside">aside</aside>
+	</section>
+	<footer class="ft">footer</footer>
+	
+</body>
+</html>

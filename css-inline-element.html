@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.sup{
+			height:30px;
+		}
+		.sub{
+			height:50px;
+			width:100px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="sup">dddddddddd
+		<span class="sub">xxxxxxxxx</span>
+	</div>
+	<script>
+		var obj = {
+			ddd:{
+				xxx:function(){
+					return this.sss;
+				}
+			},
+			sss:'sssd'
+		};
+		console.log(obj.ddd.xxx());
+	</script>
+	
+</body>
+</html>
